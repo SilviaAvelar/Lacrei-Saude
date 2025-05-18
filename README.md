@@ -34,8 +34,7 @@ Deploy:
 Este projeto pode ser implantado na plataforma Vercel, que detecta automaticamente os pushes para a branch principal (main), executa o build e publica a aplicação.
 
 Link de produção:
-[COLOQUE_SEU_LINK_DA_VERCEL_AQUI]
-(Exemplo: https://lacrei-saude-challenge-seu-usuario.vercel.app)
+https://lacrei-saude-z9yo.vercel.app/home
 
 🧪 Testes Aplicados
 Este projeto utiliza Jest e React Testing Library para testes unitários.
