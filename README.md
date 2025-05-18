@@ -1,193 +1,148 @@
-🚀 Desafio Frontend - Lacrei Saúde
-Bem-vindo ao repositório do desafio Frontend da Lacrei Saúde! Esta aplicação foi desenvolvida com Next.js (App Router), TypeScript e Styled-components, focando em uma interface acessível, responsiva e amigável à comunidade LGBTQIAPN+.
+# Lacrei Saúde - Desafio Frontend
 
-🔗 Link da aplicação em produção: https://lacrei-saude-challenge-seu-usuario.vercel.app
-📌 Substitua com seu link real após deploy na Vercel.
+Este é o repositório do desafio frontend da Lacrei Saúde, uma aplicação Next.js com TypeScript e Styled-components para conectar pacientes e profissionais da saúde da comunidade LGBTQIAPN+.
 
-📑 Sumário
-📦 Rodando o Projeto Localmente
+---
 
-📤 Build e Deploy
+## 📝 Documentação
 
-🧪 Testes Aplicados
+### 🚀 Instruções para rodar o projeto localmente
 
-⏪ Rollback Simples
+#### Pré-requisitos
+- Node.js (versão recomendada: LTS, ex: 18.x ou 20.x)
+- npm (gerenciador de pacotes)
 
-🎨 Decisões Visuais e Técnicas
-
-🔗 Simulação de API (Opcional)
-
-👩‍💻 Desenvolvedora
-
-📦 Rodando o Projeto Localmente
-✅ Pré-requisitos
-Node.js (recomendado: LTS 18.x ou 20.x)
-
-npm (ou yarn)
-
-🛠️ Instalação
-Clone o repositório:
-
-bash
-Copiar
-Editar
-git clone https://github.com/SilviaA... # substitua pela sua URL
-cd lacrei-saude-challenge
+#### Passos para instalação e execução
+1. Clone o repositório:
+```bash
+git clone https://github.com/SilviaAvelar/Lacrei-Saude.git
+cd Lacrei-Saude
 Instale as dependências:
 
 bash
 Copiar
 Editar
 npm install
-Inicie o servidor de desenvolvimento:
+Rode o servidor de desenvolvimento:
 
 bash
 Copiar
 Editar
 npm run dev
-Acesse http://localhost:3000 no navegador.
+Abra no navegador: http://localhost:3000
 
-⚠️ O projeto não requer variáveis de ambiente para rodar localmente. Para futuras integrações, utilize um arquivo .env.local.
-
-📤 Build e Deploy
-📦 Build para produção
+🛠️ Build e Deploy
+Build para produção:
 bash
 Copiar
 Editar
 npm run build
-Este comando cria a pasta .next com os arquivos otimizados.
+Deploy:
+Este projeto pode ser implantado na plataforma Vercel, que detecta automaticamente os pushes para a branch principal (main), executa o build e publica a aplicação.
 
-🚀 Deploy com Vercel
-Suba seu código para um repositório Git (ex: GitHub).
-
-Conecte o repositório à Vercel.
-
-Configure o build automático para a branch main.
-
-A Vercel detectará o framework Next.js e rodará npm run build.
-
-🔗 Link de Produção: https://lacrei-saude-challenge-seu-usuario.vercel.app
+Link de produção:
+[COLOQUE_SEU_LINK_DA_VERCEL_AQUI]
+(Exemplo: https://lacrei-saude-challenge-seu-usuario.vercel.app)
 
 🧪 Testes Aplicados
-Utiliza Jest e React Testing Library com foco em testes unitários dos principais componentes:
+Este projeto utiliza Jest e React Testing Library para testes unitários.
 
-✅ Componentes Testados
+Componentes testados:
+
 Header
 
-Verificação do logo
+Renderização do logo
 
-Presença dos links "Quem Somos" e "Ajuda"
+Presença dos links principais ("Quem Somos", "Ajuda")
 
-Botão "Entrar"
-
-Mocks para usePathname e useRouter (Next.js)
+Botão de ação "Entrar"
 
 Footer
 
-Renderização de seções: "Lacrei Saúde", "Saúde", "Segurança e Privacidade"
+Renderização do logo
 
-Verificação dos links e ícones sociais
+Títulos das seções ("Lacrei Saúde", "Saúde", "Segurança e Privacidade")
 
-Texto dinâmico de copyright
+Links específicos e seus atributos
 
-▶️ Comandos para testar:
-Executar testes:
+Ícones de mídias sociais
+
+Texto de copyright
+
+Como rodar os testes:
 
 bash
 Copiar
 Editar
 npm test
-Modo watch:
+Para rodar em modo watch (re-executa ao detectar alterações):
 
 bash
 Copiar
 Editar
 npm run test:watch
-Cobertura de código:
+Para gerar relatório de cobertura:
 
 bash
 Copiar
 Editar
 npm run test:coverage
-🧰 Bibliotecas utilizadas
-Jest
-
-@testing-library/react
-
-@testing-library/jest-dom
-
-Styled-components com ThemeProvider mockado
-
 ⏪ Rollback Simples
-🔁 Usando a Vercel
-Acesse o projeto na Vercel.
+Na Vercel:
 
-Vá em Deployments.
+Acesse o dashboard do projeto.
 
-Escolha um build anterior e clique em Promote to Production.
+Vá na aba “Deployments”.
 
-🔁 Usando Git
-Identifique o commit anterior:
+Encontre o deploy anterior estável.
+
+Clique em “Redeploy” ou “Promote to Production”.
+
+Usando Git manualmente:
 
 bash
 Copiar
 Editar
 git log
-Reverta com:
-
-bash
-Copiar
-Editar
-git revert <HASH_DO_COMMIT>
+git revert <hash_do_commit_problematico>
 git push origin main
-🎨 Decisões Visuais e Técnicas
-🎨 Visuais
-Styled-components para escopo de estilo, reutilização e suporte a theming.
+🎨 Escolhas Visuais e Técnicas
+Visuais:
 
-Design System da Lacrei (Marsha): uso de cores, espaçamentos e tipografia (Nunito).
+Estilização com Styled-components para CSS modular e theming dinâmico.
 
-Responsividade: media queries para adaptação em mobile, tablet e desktop.
+Guia de estilo baseado no Marsha Design System da Lacrei Saúde.
 
-Acessibilidade (A11y):
+Tipografia Nunito e uso consistente das cores oficiais.
 
-HTML semântico
+Responsividade para mobile, tablet e desktop.
 
-alt para imagens
+Acessibilidade (uso de HTML semântico, aria-labels, contraste adequado).
 
-aria-labels para botões
+Ícones via react-icons.
 
-Navegação por teclado
+Técnicas:
 
-Ícones: react-icons (SVG customizável)
+Framework Next.js (App Router) para renderização otimizada.
 
-💻 Técnicas
-Framework: Next.js (15.x, App Router)
+Código em TypeScript para maior segurança e qualidade.
 
-Linguagem: TypeScript
+Hooks React para gerenciamento local de estado.
 
-Gerenciamento de Estado: React Hooks (useState, useEffect, useRef)
+Estrutura de pastas organizada (src/app, src/components, src/styles).
 
-Roteamento: next/link e useRouter (App Router)
+Configuração de ESLint e Prettier para padronização de código.
 
-Linting: ESLint + Prettier
+Mock de hooks Next.js para testes unitários.
 
-Estrutura de Pastas:
+🔗 (Opcional) Simulação de API Back-end
+Neste desafio, a integração com API real não foi implementada.
 
-arduino
-Copiar
-Editar
-src/
-├── app/             # rotas
-├── components/      # componentes reutilizáveis
-├── styles/          # tema global e arquivos .styles.ts
-└── mocks/           # dados mockados
-🔗 Simulação de API (Opcional)
-Login: funcionalidade simulada com alert(), sem backend real.
+A funcionalidade de login é simulada via alert().
 
-Navegação e conteúdo: dados estáticos definidos em arrays/objetos locais.
+Dados estáticos e links no Header e Footer são definidos localmente no código.
 
-Sem integração real com APIs.
+Para futuras integrações, o projeto pode ser facilmente adaptado para consumir APIs reais ou mockadas.
 
-👩‍💻 Desenvolvedora
-Feito com 💜 por Silvia Avelar
-🔗 LinkedIn | 🌐 Portfólio | 📧 seu@email.com
+Desenvolvido por Silvia Avelar
+GitHub
