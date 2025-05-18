@@ -3,7 +3,7 @@
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/(pages)/pessoa-usuaria/page": "app/(pages)/pessoa-usuaria/page.js",
   "/(pages)/profissional/page": "app/(pages)/profissional/page.js",
+  "/(pages)/quem-somos/page": "app/(pages)/quem-somos/page.js",
   "/home/page": "app/home/page.js",
-  "/page": "app/page.js",
-  "/(pages)/quem-somos/page": "app/(pages)/quem-somos/page.js"
+  "/page": "app/page.js"
 }

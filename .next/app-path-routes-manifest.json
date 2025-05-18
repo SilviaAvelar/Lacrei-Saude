@@ -3,7 +3,7 @@
   "/favicon.ico/route": "/favicon.ico",
   "/(pages)/pessoa-usuaria/page": "/pessoa-usuaria",
   "/(pages)/profissional/page": "/profissional",
+  "/(pages)/quem-somos/page": "/quem-somos",
   "/home/page": "/home",
-  "/page": "/",
-  "/(pages)/quem-somos/page": "/quem-somos"
+  "/page": "/"
 }
